@@ -157,3 +157,63 @@ function ex10() {
 
     console.log(`The average of all the numbers is ${avg}`);
 }
+
+function ex11() {
+    var name = String(prompt('Please enter your name'));
+    var age = Number(prompt('Thanks! Now, please enter your age'));
+    var dis = Number(prompt("One more thing and we're done, please enter the distance you ran"));
+
+    if (age >= 18 && age <= 30 && dis <= 25) {
+        console.log(`${name}, you are ${age} years old, you can do better!`);
+    }
+    else if (age >= 18 && age <= 30 && dis > 25 && dis <= 50) {
+        console.log(`${name}, you are ${age} years old, you did great!`);
+    }
+    else if (age > 30 && age <= 50 && dis >= 0 && dis <= 10) {
+        console.log(`${name}, you are ${age} years old, you have to get better!`);
+    }
+    else if (age > 30 && age <= 50 && dis > 10 && dis <= 30) {
+        console.log(`${name}, you are ${age} years old, you can do better!`);
+    }
+    else if (age > 30 && age <= 50 && dis > 30 && dis <= 50) {
+        console.log(`${name}, you are ${age} years old, you are awesome!`);
+    }
+    else {
+        console.log(' You have entered illegal data');
+    }
+}
+
+function ex12() {
+    var time = Number(prompt('מה השעה עכשיו?'));
+
+    if (time >= 5 && time <= 11) {
+        console.log('בוקר טוב!');
+    }
+    else if (time >= 12 && time <= 17) {
+        console.log('צהריים טובים!');
+    }
+    else if (time >= 18 && time <= 23) {
+        console.log('לילה טוב!');
+    }
+    else {
+        console.log('מה את/ה עושה ער בשעה כזו?!');
+    }
+}
+
+function ex14() {
+    var minutes = Number(prompt('הזן את מספר הדקות'));
+    var hours = 0;
+
+    hours = minutes / 60 ;
+
+    console.log(`יש ${hours} שעות ב-${minutes} דקות`);
+}
+
+function ex15() {
+    var priceBeforeSale = Number(prompt('הזן בבקשה את מחיר הרכב לפני ההנחה'));
+    var priceAfterSale = 0;
+
+    priceAfterSale = priceBeforeSale * 0.95;
+
+    console.log(`מחיר הרכב שביקשת לאחר ההנחה הוא ${priceAfterSale} שקלים חדשים.`);
+}
