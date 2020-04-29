@@ -139,3 +139,21 @@ function ex9() {
         console.log(`Unbelievable! it's a tie!!`);
     }
 }
+
+function ex10() {
+    const NUMBER_OF_NUMBERS = 7;
+    var numbers = new Array(NUMBER_OF_NUMBERS);
+    var avg = 0;
+
+    for (var i = 0; i < NUMBER_OF_NUMBERS; i++) {
+        numbers[i] = Number(prompt(`Please enter a number`));
+    }
+
+    for (var i = 0; i < numbers.length; i++) {
+        avg += numbers[i];
+    }
+
+    avg /= NUMBER_OF_NUMBERS; 
+
+    console.log(`The average of all the numbers is ${avg}`);
+}
